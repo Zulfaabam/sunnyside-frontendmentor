@@ -1,0 +1,212 @@
+.content {
+  text-align: center;
+
+  &--transform,
+  &--standout {
+    height: 440px;
+    padding: 3rem 2rem;
+
+    //992px
+    @media screen and (min-width: 62rem) {
+      padding: 5rem;
+      text-align: left;
+    }
+
+    //1066
+    @media screen and (min-width: 66.625rem) {
+      padding: 7rem;
+    }
+  }
+
+  &--cherry {
+    height: 600px;
+    background-image: url(/images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.25rem;
+
+    @media screen and (min-width: 34rem) {
+      grid-area: cherry;
+    }
+
+    @media screen and (min-width: 62rem) {
+      background-image: url(/images/desktop/image-graphic-design.jpg);
+      background-position: center;
+      padding: 0 5rem;
+    }
+
+    // 1280px
+    @media screen and (min-width: 80rem) {
+      padding: 0 10rem;
+    }
+  }
+
+  &--orange {
+    height: 600px;
+    background-image: url(/images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.25rem;
+
+    @media screen and (min-width: 34rem) {
+      grid-area: jeruk;
+    }
+
+    //618px
+    @media screen and (min-width: 38.625rem) {
+      padding: 0 1.4rem;
+    }
+
+    //848px
+    @media screen and (min-width: 53rem) {
+      padding: 0 1.6rem;
+    }
+
+    @media screen and (min-width: 62rem) {
+      background-image: url(/images/desktop/image-photography.jpg);
+      background-position: center;
+      padding: 0 5rem;
+    }
+
+    // 1280px
+    @media screen and (min-width: 80rem) {
+      padding: 0 13rem;
+    }
+  }
+
+  &--pics {
+    height: 375px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    //560px 35rem
+    @media screen and (min-width: 35rem) {
+      height: 187.5px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    //848px
+    @media screen and (min-width: 53rem) {
+      height: 450px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .milk-img {
+      height: 187.5px;
+      background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media screen and (min-width: 53rem) {
+        height: 450px;
+        background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+        background-position: center;
+      }
+    }
+
+    .bowl-img {
+      height: 187.5px;
+      background-image: url(/images/mobile/image-gallery-orange.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media screen and (min-width: 53rem) {
+        height: 450px;
+        background-image: url(/images/desktop/image-gallery-orange.jpg);
+        background-position: center;
+      }
+    }
+
+    .cone-img {
+      height: 187.5px;
+      background-image: url(/images/mobile/image-gallery-cone.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media screen and (min-width: 53rem) {
+        height: 450px;
+        background-image: url(/images/desktop/image-gallery-cone.jpg);
+        background-position: center;
+      }
+    }
+
+    .cube-img {
+      height: 187.5px;
+      background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media screen and (min-width: 53rem) {
+        height: 450px;
+        background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+        background-position: center;
+      }
+    }
+  }
+
+  //544px
+  @media screen and (min-width: 34rem) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'transforms egg'
+      'glass standout'
+      'cherry jeruk';
+  }
+}
+
+.egg-img {
+  height: 310px;
+  background-image: url(/images/mobile/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 34rem) {
+    height: 500px;
+    background-position: center;
+    grid-area: egg;
+  }
+
+  //992px
+  @media screen and (min-width: 62rem) {
+    height: 600px;
+    background-image: url(/images/desktop/image-transform.jpg);
+  }
+}
+
+.glass-img {
+  height: 310px;
+  background-image: url(/images/mobile/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 34rem) {
+    height: 500px;
+    background-position: center;
+    grid-area: glass;
+  }
+
+  //992px
+  @media screen and (min-width: 62rem) {
+    height: 600px;
+    background-image: url(/images/desktop/image-stand-out.jpg);
+  }
+}
+
+.content--transform {
+  @media screen and (min-width: 34rem) {
+    grid-area: transforms;
+  }
+}
+
+.content--standout {
+  @media screen and (min-width: 34rem) {
+    grid-area: standout;
+  }
+}

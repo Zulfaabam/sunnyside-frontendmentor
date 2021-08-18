@@ -1,0 +1,52 @@
+.testimonials {
+  text-align: center;
+  margin-top: 4rem;
+
+  &--title {
+    @media screen and (min-width: 47rem) {
+      grid-area: title;
+    }
+  }
+
+  &--data {
+    padding: 2.5rem 2.5rem;
+
+    @media screen and (min-width: 47rem) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  //992px
+  @media screen and (min-width: 47rem) {
+    display: grid;
+    grid-template-areas:
+      'title title title'
+      'emily thomas jennie';
+  }
+}
+
+.client-pic {
+  border-radius: 50%;
+  width: 25%;
+}
+
+.emily {
+  @media screen and (min-width: 47rem) {
+    grid-area: emily;
+  }
+}
+
+.thomas {
+  @media screen and (min-width: 47rem) {
+    grid-area: thomas;
+  }
+}
+
+.jennie {
+  @media screen and (min-width: 47rem) {
+    grid-area: jennie;
+  }
+}

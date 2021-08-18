@@ -1,0 +1,20 @@
+.footer {
+  background-color: $dark-moderate-cyan;
+  text-align: center;
+
+  &--logo {
+    padding: 2rem 0;
+  }
+}
+
+.socmed {
+  margin: 1rem 0.5rem;
+}
+
+.attribution {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+}

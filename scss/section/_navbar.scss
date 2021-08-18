@@ -1,0 +1,103 @@
+.header {
+  background-image: url(/images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+
+  &--title {
+    text-align: center;
+    margin-top: 3rem;
+
+    //992px
+    @media screen and (min-width: 62rem) {
+      margin-top: 5rem;
+    }
+  }
+
+  //460px
+  @media screen and (min-width: 28.75rem) {
+    background-image: url(/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  //992px
+  @media screen and (min-width: 62rem) {
+    height: 800px;
+  }
+}
+
+.arrow-icon {
+  margin-top: 2.3rem;
+
+  //992px
+  @media screen and (min-width: 62rem) {
+    margin-top: 6rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+
+  //540px
+  @media screen and (min-width: 33.75rem) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--logo {
+    padding-top: 0.4rem;
+  }
+
+  &--links {
+    display: none;
+
+    //540px
+    @media screen and (min-width: 33.75rem) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  //992px
+  @media screen and (min-width: 62rem) {
+    padding: 2rem;
+  }
+}
+
+.navbar--links.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 2.3rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+
+  //540px
+  @media screen and (min-width: 33.75rem) {
+    display: none;
+  }
+
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
